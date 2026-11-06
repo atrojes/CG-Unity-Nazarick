@@ -1485,13 +1485,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ced3d0838fdf39d40b5bc580c326acc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  shape: 1
   pillarPrefab: {fileID: 4177770190909656774, guid: 4d34341c3dc1ff94dadd730627de5622, type: 3}
   wallSegmentPrefab: {fileID: 1822662056898615045, guid: b96a1a805484edc49b6ba0f85b88781b, type: 3}
   pillarCount: 8
-  radius: 20
-  startAngle: 0
-  endAngle: 270
   lineLength: 48
   pillarHeight: 12
   pillarThickness: 2
@@ -37363,13 +37359,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ced3d0838fdf39d40b5bc580c326acc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  shape: 1
   pillarPrefab: {fileID: 4177770190909656774, guid: 4d34341c3dc1ff94dadd730627de5622, type: 3}
   wallSegmentPrefab: {fileID: 1822662056898615045, guid: b96a1a805484edc49b6ba0f85b88781b, type: 3}
   pillarCount: 8
-  radius: 20
-  startAngle: 0
-  endAngle: 270
   lineLength: 50
   pillarHeight: 12
   pillarThickness: 2

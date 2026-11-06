@@ -3,19 +3,9 @@ using UnityEngine;
 [ExecuteInEditMode]
 public class LaneBuilder : MonoBehaviour
 {
-    public enum Shape { Arc, Line }
-
-    public Shape shape = Shape.Arc;
     public GameObject pillarPrefab;
     public GameObject wallSegmentPrefab;
     public int pillarCount = 12;
-
-    [Header("Modo Arc")]
-    public float radius = 20f;
-    public float startAngle = 0f;
-    public float endAngle = 270f;
-
-    [Header("Modo Line")]
     public float lineLength = 60f;      // largo total, centrado en el GameObject
 
     [Header("Tamaño del pilar")]
@@ -37,20 +27,10 @@ public class LaneBuilder : MonoBehaviour
         for (int i = 0; i < pillarCount; i++)
         {
             float t = pillarCount > 1 ? i / (float)(pillarCount - 1) : 0f;
-            Vector3 world;
 
-            if (shape == Shape.Arc)
-            {
-                float a = Mathf.Lerp(startAngle, endAngle, t) * Mathf.Deg2Rad;
-                world = transform.position +
-                        new Vector3(Mathf.Cos(a), 0, Mathf.Sin(a)) * radius;
-            }
-            else
-            {
-                // De -largo/2 a +largo/2 a lo largo del eje X local
-                float offset = Mathf.Lerp(-lineLength / 2f, lineLength / 2f, t);
-                world = transform.position + transform.right * offset;
-            }
+            // De -largo/2 a +largo/2 a lo largo del eje X local
+            float offset = Mathf.Lerp(-lineLength / 2f, lineLength / 2f, t);
+            Vector3 world = transform.position + transform.right * offset;
 
             if (Terrain.activeTerrain != null)
                 world.y = Terrain.activeTerrain.SampleHeight(world)
