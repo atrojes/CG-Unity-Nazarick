@@ -67,10 +67,10 @@ Se han usado varios materiales y texturas adicionales, siendo la mayoría descar
 
 ## Iluminación y ambiente
 Se modificaron tanto la luz, el cielo y la niebla de la escena para lograr un ambiente más frío y sombrío.
-- Luz: se bajó la intensidad y se cambió a un color más desaturado.
-- Skybox: se redujo la luz ambiental y se cambió a un skybox nublado.
-- Niebla: se activó, se aumentó la densidad para reducir la visibilidad y se cambió el color a un gris verdoso.
-- Interior del mausoleo: un cubo con material *Unlit* negro simula una oscuridad total sin depender de la iluminación.
+- **Luz**: se bajó la intensidad y se cambió a un color más desaturado.
+- **Skybox**: se redujo la luz ambiental y se cambió a un skybox nublado.
+- **Niebla**: se activó, se aumentó la densidad para reducir la visibilidad y se cambió el color a un gris verdoso.
+- **Interior del mausoleo**: se usó un cubo con material *Unlit* negro para simular oscuridad total sin depender de la iluminación.
 
 # Capturas
 
