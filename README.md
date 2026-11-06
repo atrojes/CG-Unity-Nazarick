@@ -72,18 +72,23 @@ Se modificaron tanto la luz, el cielo y la niebla de la escena para lograr un am
 # Capturas
 
 ![Referencias: vista aérea de la tumba](screenshots/referencia-aerea.jpg)
+
 *Fig. 1: Referencia de la Gran Tumba de Nazarick. Fuente: anime Overlord.*
 
 ![Referencias: fachada del mausoleo](screenshots/referencia-frente.png)
+
 *Fig. 2: Referencia del mausoleo central. Fuente: anime Overlord.*
 
 ![Vista aérea de la tumba](screenshots/aerea.png)
+
 *Fig. 3: Vista aérea de la Gran Tumba sin la niebla.*
 
 ![Mausoleo central](screenshots/mausoleo.png)
+
 *Fig. 4: Mausoleo central visto desde la entrada.*
 
 ![Campamento](screenshots/campamento.png)
+
 *Fig. 5: Campamento junto a la entrada.*
 
 # Referencias
