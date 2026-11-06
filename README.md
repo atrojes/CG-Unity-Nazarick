@@ -5,15 +5,18 @@
 - [Scripts](#scripts)
 - [Otros](#otros)
 - [Capturas](#capturas)
+
 # Resumen del proyecto
 El proyecto busca representar la Gran Tumba de Nazarick (imágenes de ejemplo en [capturas](#capturas)), la cual es uno de los lugares más importantes y reconocibles de la serie de novelas ligeras japonesa Overlord. La novela tiene como protagonista a un no-muerto y uno de los temas más recurrentes es la muerte, de ahí que buscase un ambiente más lúgubre y/o macabro en el proyecto.
+
 # Terrain
 En los inicios de la práctica se usaron las herramientas del Terrain de Unity para estudiar su funcionamiento: se crearon montañas, árboles y depresiones, y se probaron distintos materiales y detalles.
-- Herramientas: Set Height, Smooth Height, Paint Texture, Paint Trees, Paint Details, Paint Holes.
-- Ajustes: se modificaron la altura general (Terrain Height) y el tamaño del terreno. Se partió del tamaño por defecto (1000x1000), se redujo mientras se aprendía a usar las herramientas y se volvió al tamaño inicial al decidir qué construir. 
-- Resultado final: el terreno se aplanó para construir la tumba, con una depresión circular con el borde muy elevado.
-- Scripts: `TerrainRim` actúa directamente sobre el terreno mediante `GetHeights` y `SetHeights` para crear la depresión circular con un desnivel casi vertical en el borde. Se optó por un script porque resultó muy difícil conseguir ese desnivel con el pincel del Terrain.
-## Game Objects
+- **Herramientas**: Set Height, Smooth Height, Paint Texture, Paint Trees, Paint Details, Paint Holes.
+- **Ajustes**: se modificaron la altura general (Terrain Height) y el tamaño del terreno. Se partió del tamaño por defecto (1000x1000), se redujo mientras se aprendía a usar las herramientas y se volvió al tamaño inicial al decidir qué construir. 
+- **Resultado final**: el terreno se aplanó para construir la tumba, con una depresión circular con el borde muy elevado.
+- **Scripts**: `TerrainRim` actúa directamente sobre el terreno mediante `GetHeights` y `SetHeights` para crear la depresión circular con un desnivel casi vertical en el borde. Se optó por un script porque resultó muy difícil conseguir ese desnivel con el pincel del Terrain.
+
+# Game Objects
 Para realizar el proyecto se han usado una gran cantidad de Game Objects.
 
 | Elemento                                     | Cómo está hecho                                                                      | Origen                                             | Cantidad |
@@ -45,10 +48,10 @@ La siguiente tabla recoge los personajes usados, su rol y las animaciones asigna
 Los NPC de patrulla se mueven sobre la malla de navegación generada con NavMesh Surface (ver [Herramientas adicionales](#herramientas-adicionales)).
 
 # Scripts
-- ArcBuilder: coloca pilares y vigas formando arcos (radio y ángulos de inicio y fin ajustables), adaptándose a la altura del Terrain.
-- LaneBuilder: igual que ArcBuilder, pero genera líneas rectas (longitud y números de pilares ajustables), orientadas según la rotación del GameObject.
-- Patrol: hace que un personaje patrulle entre varios puntos usando un `NavMeshAgent`. Los puntos son GameObjects vacío que se asignan al array `Points` desde el Inspector, y el personaje los recorre en orden y de forma cíclica. El parámetro `Wait Time` define los segundos que espera en cada punto antes de ir al siguiente. Además, también actualiza el parámetro `Speed` del Animator con la velocidad del agente.
-- TerrainRim: modifica la altura del terreno para crear la depresión circular con el desnivel casi vertical del borde. Este script fue utilizado porque, con la herramienta de Terrain `SetHeight`, el terreno no quedaba tal y como buscaba.
+- **ArcBuilder**: coloca pilares y vigas formando arcos (radio y ángulos de inicio y fin ajustables), adaptándose a la altura del Terrain.
+- **LaneBuilder**: igual que ArcBuilder, pero genera líneas rectas (longitud y números de pilares ajustables), orientadas según la rotación del GameObject.
+- **Patrol**: hace que un personaje patrulle entre varios puntos usando un `NavMeshAgent`. Los puntos son GameObjects vacío que se asignan al array `Points` desde el Inspector, y el personaje los recorre en orden y de forma cíclica. El parámetro `Wait Time` define los segundos que espera en cada punto antes de ir al siguiente. Además, también actualiza el parámetro `Speed` del Animator con la velocidad del agente.
+- **TerrainRim**: modifica la altura del terreno para crear la depresión circular con el desnivel casi vertical del borde. Este script fue utilizado porque, con la herramienta de Terrain `SetHeight`, el terreno no quedaba tal y como buscaba.
 
 # Otros
 ## Materiales y texturas
@@ -71,7 +74,7 @@ Se modificaron tanto la luz, el cielo y la niebla de la escena para lograr un am
 
 # Capturas
 
-![Referencias: vista aérea de la tumba](screenshots/referencia-aerea.jpg)
+![Referencias: vista aérea de la tumba](screenshots/referencia-aerea.jpg)  
 
 *Fig. 1: Referencia de la Gran Tumba de Nazarick. Fuente: anime Overlord.*
 
